@@ -1,0 +1,42 @@
+@media screen and (max-width: 950px) and (min-width: 767px) {
+
+    #body,
+    #content :first-child {
+        border-radius: 20px;
+    }
+
+    #content {
+        background-color: transparent !important;
+        grid-template-columns: 1fr;
+    }
+
+    #profile {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+
+    html,
+    body {
+        background-color: #EEF0F6;
+    }
+
+    #container {
+        grid-template-columns: 1fr;
+        background-color: #EEF0F6;
+    }
+
+    #nav,
+    #profile {
+        display: none;
+    }
+
+    #content {
+        grid-template-columns: 1fr;
+        border-radius: 0px !important;
+        background-color: #EEF0F6;
+    }
+
+}
