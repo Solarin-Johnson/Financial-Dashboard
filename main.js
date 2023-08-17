@@ -5,7 +5,7 @@ autoSize = setInterval(() => {
   } else {
     document.getElementById("container").style.height = 900 + "px";
   }
-}, 10)
+}, 1)
 
 const menuItems = document.querySelectorAll(".menu_items")
 menuItems.forEach(function (element) {

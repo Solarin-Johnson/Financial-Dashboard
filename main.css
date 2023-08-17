@@ -262,8 +262,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 3fr 2fr;
     grid-template-columns: 1fr;
-    grid-gap: 1px;
-    background: none !important;
+    align-items: center;
 }
 
 #profile div {
@@ -298,8 +297,8 @@ body {
     font-family: cursive;
     font-size: 16px;
     font-weight: bold;
-    color: #0C3E64; 
-} 
+    color: #0C3E64;
+}
 
 #select {
     grid-column: 3/4;
@@ -324,6 +323,7 @@ body {
     background: #fff !important;
     border-radius: 15px !important;
     box-shadow: 0px 5px 10px #dddee4;
+
 }
 
 #budget,
@@ -355,29 +355,65 @@ body {
     grid-template-rows: 1fr 80px;
 }
 
-#chart_image {
-    /* background: url("my_chart.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 5px; */
-}
 
 #profile_info {
+    height: 100px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    justify-content: center;
+    font-family: cursive;
 }
 
 #profile_info div {
-    background-color: #0C3E64;
+    border-radius: 0 !important;
 }
 
 #profile_image {
     grid-column: 1/2;
     grid-row: 1/3;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
-#profile{
-    grid-column: 1/1;
+#profile_image img {
+    border-radius: 50% !important;
+    border: 1px solid #000;
+    background-color: #353;
+}
+
+#profile_name {
+    grid-column: 2/4;
+    grid-row: 1/1;
+    display: grid;
+    align-self: last baseline;
+    justify-content: start;
+    font-weight: bold;
+}
+
+#profile_mail {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    align-self: self-start;
+    color: #3c4b58;
+    font-size: 13px;
+}
+
+#log_out {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+hr {
+    margin-top: -500px;
+    width: 0px;
+    height: 250px;
+    transform: rotate(90deg);
 }
